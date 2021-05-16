@@ -83,37 +83,4 @@ F1 "VehicleBat.sch" 50
 F2 "Bat+" I R 5600 6550 50 
 F3 "Bat-" I R 5600 6700 50 
 $EndSheet
-$Comp
-L Device:Fuse F?
-U 1 1 60A10AE6
-P 9750 2250
-F 0 "F?" V 9553 2250 50  0000 C CNN
-F 1 "Fuse" V 9644 2250 50  0000 C CNN
-F 2 "" V 9680 2250 50  0001 C CNN
-F 3 "~" H 9750 2250 50  0001 C CNN
-	1    9750 2250
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:Fuse F?
-U 1 1 60A11AAC
-P 9750 2600
-F 0 "F?" V 9553 2600 50  0000 C CNN
-F 1 "Fuse" V 9644 2600 50  0000 C CNN
-F 2 "" V 9680 2600 50  0001 C CNN
-F 3 "~" H 9750 2600 50  0001 C CNN
-	1    9750 2600
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:Fuse F?
-U 1 1 60A11FB9
-P 9750 2950
-F 0 "F?" V 9553 2950 50  0000 C CNN
-F 1 "Fuse" V 9644 2950 50  0000 C CNN
-F 2 "" V 9680 2950 50  0001 C CNN
-F 3 "~" H 9750 2950 50  0001 C CNN
-	1    9750 2950
-	0    1    1    0   
-$EndComp
 $EndSCHEMATC

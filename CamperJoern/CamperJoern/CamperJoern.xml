@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<export version="D">
+  <design>
+    <source>/home/simon/Dokumente/CamperJoern/CamperJoern/CamperJoern/CamperJoern.sch</source>
+    <date>So 16 Mai 2021 12:35:07 CEST</date>
+    <tool>Eeschema 5.1.10-88a1d61d58~88~ubuntu20.04.1</tool>
+    <sheet number="1" name="/" tstamps="/">
+      <title_block>
+        <title>Boad</title>
+        <company>Firma</company>
+        <rev>0.1</rev>
+        <date>2021-05-01</date>
+        <source>CamperJoern.sch</source>
+        <comment number="1" value="Simon Hengstermann"/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+      </title_block>
+    </sheet>
+    <sheet number="2" name="/ChargeControll/" tstamps="/60A10915/">
+      <title_block>
+        <title/>
+        <company/>
+        <rev/>
+        <date/>
+        <source>ChargeControll.sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+      </title_block>
+    </sheet>
+    <sheet number="3" name="/DCAC230/" tstamps="/60A128BC/">
+      <title_block>
+        <title/>
+        <company/>
+        <rev/>
+        <date/>
+        <source>DCAC230.sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+      </title_block>
+    </sheet>
+    <sheet number="4" name="/LiFePO4.sch/" tstamps="/60A12940/">
+      <title_block>
+        <title/>
+        <company/>
+        <rev/>
+        <date/>
+        <source>LiFePO4.sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+      </title_block>
+    </sheet>
+    <sheet number="5" name="/SolarModule.sch/" tstamps="/60A0F85B/">
+      <title_block>
+        <title/>
+        <company/>
+        <rev/>
+        <date/>
+        <source>SolarModule.sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+      </title_block>
+    </sheet>
+  </design>
+  <components>
+    <comp ref="J1">
+      <value>Conn_WallSocket_Earth</value>
+      <datasheet>~</datasheet>
+      <libsource lib="Connector" part="Conn_WallSocket_Earth" description="3-pin german wall socket, with Earth wire (110VAC, 220VAC)"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>608E488C</tstamp>
+    </comp>
+    <comp ref="P1">
+      <value>Conn_WallPlug_Earth</value>
+      <datasheet>~</datasheet>
+      <libsource lib="Connector" part="Conn_WallPlug_Earth" description="3-pin general wall plug, with Earth wire (110VAC, 220VAC)"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>608E5BE1</tstamp>
+    </comp>
+  </components>
+  <libparts>
+    <libpart lib="Connector" part="Conn_WallPlug_Earth">
+      <description>3-pin general wall plug, with Earth wire (110VAC, 220VAC)</description>
+      <docs>~</docs>
+      <fields>
+        <field name="Reference">P</field>
+        <field name="Value">Conn_WallPlug_Earth</field>
+      </fields>
+      <pins>
+        <pin num="1" name="AC_P" type="power_out"/>
+        <pin num="2" name="AC_N" type="power_out"/>
+        <pin num="3" name="EARTH" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Connector" part="Conn_WallSocket_Earth">
+      <description>3-pin german wall socket, with Earth wire (110VAC, 220VAC)</description>
+      <docs>~</docs>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">Conn_WallSocket_Earth</field>
+      </fields>
+      <pins>
+        <pin num="1" name="AC_P" type="power_in"/>
+        <pin num="2" name="AC_N" type="power_in"/>
+        <pin num="3" name="EARTH" type="passive"/>
+      </pins>
+    </libpart>
+  </libparts>
+  <libraries>
+    <library logical="Connector">
+      <uri>/usr/share/kicad/library/Connector.lib</uri>
+    </library>
+  </libraries>
+  <nets>
+    <net code="1" name="Net-(J1-Pad2)">
+      <node ref="J1" pin="2"/>
+    </net>
+    <net code="15" name="Net-(P1-Pad3)">
+      <node ref="P1" pin="3"/>
+    </net>
+    <net code="16" name="Net-(P1-Pad2)">
+      <node ref="P1" pin="2"/>
+    </net>
+    <net code="17" name="Net-(P1-Pad1)">
+      <node ref="P1" pin="1"/>
+    </net>
+    <net code="18" name="Net-(J1-Pad3)">
+      <node ref="J1" pin="3"/>
+    </net>
+    <net code="19" name="Net-(J1-Pad1)">
+      <node ref="J1" pin="1"/>
+    </net>
+  </nets>
+</export>
